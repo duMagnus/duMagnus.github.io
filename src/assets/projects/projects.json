@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "title": "Quick Prompt",
+      "body": "A desktop app made with Electron and Angular that shows an input modal wherever you are so you can ask GPT for help.",
+      "media": "assets/projectMedia/quick-prompt.gif",
+      "link": "https://github.com/duMagnus/quick-prompt"
+    },
+    {
+      "title": "Angular Tic Tac Toe",
+      "body": "A simple tic tac toe game made in Angular, as a way of learning the framework.",
+      "media": "assets/projectMedia/angular-tic-tac-toe.gif",
+      "link": "https://github.com/duMagnus/angular-tic-tac-toe"
+    }
+  ]
+}
