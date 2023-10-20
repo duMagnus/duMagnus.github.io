@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <Background
       style={{
-        background: `linear-gradient(155deg, ${theme.colors.lGray}, ${theme.colors.white})`,
+        background: `linear-gradient(155deg, ${theme.colors.dBlack}, ${theme.colors.lBlack})`,
       }}
     >
       <Header

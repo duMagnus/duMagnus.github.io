@@ -9,7 +9,7 @@ import {
 
 export const ProjectCard = ({ projectIndex, project }) => {
   return (
-    <ProjectCardContainer inverse={projectIndex % 2 === 0}>
+    <ProjectCardContainer>
       <a href={project.link} target="_blank">
         <ProjectGif src={process.env.PUBLIC_URL + project.media} />
       </a>

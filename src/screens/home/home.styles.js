@@ -11,6 +11,7 @@ export const Header = styled.header`
   display: flex;
   box-sizing: border-box;
   align-items: center;
+  justify-content: center;
 `;
 
 export const Logo = styled.img.attrs({
@@ -30,6 +31,5 @@ export const AppLink = styled.a`
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: 0%;
-  background-color: red;
+  height: 0;
 `;
