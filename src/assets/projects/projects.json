@@ -17,6 +17,23 @@
       "body": "What started as a python console game for school became my first app integrating openAI's API. Here I tried to create two ways to get new words. The first one was with my (mostly) original algorithm from the school project, with preloaded words and an algorithm to randomly pick one and shuffle it. The second one was offsetting the processing all to openAI. I managed to not only get a new random word from them, but in any language, in json formatting and shuffled.",
       "media": "assets/projectMedia/anagrams.gif",
       "link": "https://github.com/duMagnus/anagrams-be"
+    },{
+      "title": "Quick Prompt",
+      "body": "A desktop app made with Electron and Angular that shows an input modal wherever you are so you can ask GPT for help.",
+      "media": "assets/projectMedia/angular-quick-prompt.gif",
+      "link": "https://github.com/duMagnus/quick-prompt"
+    },
+    {
+      "title": "Angular Tic Tac Toe",
+      "body": "A simple tic tac toe game made in Angular, as a way of learning the framework.",
+      "media": "assets/projectMedia/angular-tic-tac-toe.gif",
+      "link": "https://github.com/duMagnus/angular-tic-tac-toe"
+    },
+    {
+      "title": "Anagrams",
+      "body": "What started as a python console game for school became my first app integrating openAI's API. Here I tried to create two ways to get new words. The first one was with my (mostly) original algorithm from the school project, with preloaded words and an algorithm to randomly pick one and shuffle it. The second one was offsetting the processing all to openAI. I managed to not only get a new random word from them, but in any language, in json formatting and shuffled.",
+      "media": "assets/projectMedia/anagrams.gif",
+      "link": "https://github.com/duMagnus/anagrams-be"
     }
   ]
 }
