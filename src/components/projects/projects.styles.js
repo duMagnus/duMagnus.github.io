@@ -7,6 +7,3 @@ export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: space-around;
 `;
-
-
-

@@ -8,7 +8,11 @@ export const Projects = () => {
   return (
     <ProjectsContainer>
       {projects.map((project, index) => {
-        return <ProjectCard project={project} projectIndex={index} />;
+        return <ProjectCard
+            project={project}
+            projectIndex={index}
+            key={index}
+        />;
       })}
     </ProjectsContainer>
   );

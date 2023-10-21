@@ -8,7 +8,7 @@ export const ProjectGif = styled.img`
   transition-property: border;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  border: 5px solid ${(props) => props.theme.colors.dGray};
+  border: 2px solid ${(props) => props.theme.colors.dGray};
 `;
 
 export const ProjectCardContainer = styled.div`
@@ -16,14 +16,15 @@ export const ProjectCardContainer = styled.div`
   flex-direction: column;
   margin: 40px 0 20px;
   padding: 20px;
-  width: 40%;
+  width: 28%;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 50px;
   transition: transform, box-shadow, 0.5s;
   &:hover {
+    cursor: pointer;
     transform: translate(-5px, -5px);
     box-shadow: rgb(52, 52, 52, 0.4) 5px 5px, rgba(52, 52, 52, 0.3) 10px 10px, rgba(52, 52, 52, 0.2) 15px 15px, rgba(52, 52, 52, 0.1) 20px 20px, rgba(52, 52, 52, 0.05) 25px 25px;
-  } 
+  }
 `;
 
 export const ProjectDescriptionContainer = styled.div`

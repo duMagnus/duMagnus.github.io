@@ -16,7 +16,7 @@ export const Home = () => {
           background: 'transparent',
         }}
       >
-        <AppLink href="home">
+        <AppLink>
           <Logo />
           <AppTextContainer>
             <AppTitle>Eduardo Magnus</AppTitle>
