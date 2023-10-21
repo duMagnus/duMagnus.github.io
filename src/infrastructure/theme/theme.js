@@ -11,4 +11,7 @@ export const theme = {
     lGreen: "#d6eadf",
     pink: "#eac4d5",
   },
+  spacing: {
+    shadowDepth: 0.5,
+  }
 };

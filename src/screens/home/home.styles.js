@@ -33,13 +33,14 @@ export const AppTextContainer = styled.div`
 export const AppTitle = styled.h1`
   margin: 0 0 10px 0;
   color: ${(props) => props.theme.colors.white};
-  font-size: 64px;
+  font-size: 50pt;
   font-weight: 500;
 `;
 
 export const AppDescription = styled.p`
   color: ${(props) => props.theme.colors.white};
   margin: 0;
+  font-size: 12pt;
 `;
 
 export const AppLink = styled.a`

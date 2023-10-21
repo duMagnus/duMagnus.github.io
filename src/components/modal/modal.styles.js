@@ -11,7 +11,7 @@ export const Backdrop = styled.div`
 `;
 
 const modalAnimation = keyframes`
-  0% { opacity: 0; transform: translate(-50%, 100%) }
+  0% { opacity: 0; transform: translate(-50%, 0) }
   30% { opacity: 0 }
   100% { opacity: 100%; }
 `;
@@ -26,7 +26,7 @@ export const ModalContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: ${modalAnimation};
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
 `;
 
