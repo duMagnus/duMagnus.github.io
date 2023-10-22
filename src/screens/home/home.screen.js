@@ -8,14 +8,10 @@ export const Home = () => {
   // const theme = useTheme();
   return (
       <>
-        <Sketch style={{ position: 'fixed', zIndex: 0}} />
+        <Sketch style={{ position: 'fixed', zIndex: 0 }} />
         <div style={{ position: 'relative', zIndex: 1 }}>
           <React.StrictMode>
-              <Header
-              style={{
-              background: 'transparent',
-              }}
-              >
+              <Header>
                   <AppLink>
                   <Logo />
                       <AppTextContainer>

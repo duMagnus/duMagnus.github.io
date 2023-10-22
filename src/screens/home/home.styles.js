@@ -8,13 +8,14 @@ export const Background = styled.div`
 `;
 export const Header = styled.header`
   height: 230px;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 40px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  background-color: ${(props) => props.theme.colors.lBlack};
 `;
 
 export const Logo = styled.img.attrs({

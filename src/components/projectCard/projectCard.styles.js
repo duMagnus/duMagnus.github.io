@@ -19,7 +19,7 @@ export const ProjectCardContainer = styled.div`
   width: 25%;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 50px;
-  transition: transform, 0.35s;
+  transition: transform, box-shadow, 0.35s;
   &:hover {
     cursor: pointer;
     transform: translate(-${(props) => props.theme.spacing.shadowDepth * 5}vw, -${(props) => props.theme.spacing.shadowDepth * 5}vw);

@@ -12,19 +12,19 @@ function App(props) {
         let cols = p.floor(p.windowWidth / cellWidth) + 1;
         let rows = p.floor(p.windowHeight / cellWidth) + 1;
 
-        const heightOffset = 4;
-
         p.windowResized = () => {
-            p.createCanvas(p.windowWidth, p.windowHeight- heightOffset);
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
             cols = p.floor(p.windowWidth / cellWidth) + 1;
             rows = p.floor(p.windowHeight / cellWidth) + 1;
         }
 
         p.setup = () => {
-            p.createCanvas(p.windowWidth, p.windowHeight- heightOffset);
+            var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+            canvas.style('display', 'block');
         }
 
         p.draw = () => {
+            p.frameRate(60);
             p.background(theme.colors.dBlack);
             for (let y = 0; y < rows; y++) {
                 for (let x = 0; x < cols; x++) {
