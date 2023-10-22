@@ -12,6 +12,6 @@ export const theme = {
     pink: "#eac4d5",
   },
   spacing: {
-    shadowDepth: 0.5,
+    shadowDepth: 0.4,
   }
 };

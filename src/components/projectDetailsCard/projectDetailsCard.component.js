@@ -1,15 +1,10 @@
 import React from "react";
 import {
-    DetailsContainer, ProjectDetailDescriptionBody,
+    DetailsContainer, GHButton, ProjectDetailDescriptionBody,
     ProjectDetailDescriptionContainer,
     ProjectDetailDescriptionTitle,
     ProjectDetailGif
 } from "./projectDetailsCard.styles";
-import {
-    ProjectDescriptionBody,
-    ProjectDescriptionContainer,
-    ProjectDescriptionTitle
-} from "../projectCard/projectCard.styles";
 
 export const ProjectDetailsCardComponent = ({ project }) => {
     return(
@@ -19,6 +14,9 @@ export const ProjectDetailsCardComponent = ({ project }) => {
                 <ProjectDetailDescriptionTitle>{project.title}</ProjectDetailDescriptionTitle>
                 <ProjectDetailDescriptionBody>{project.body}</ProjectDetailDescriptionBody>
             </ProjectDetailDescriptionContainer>
+            <GHButton href={project.ghLink} target='_blank'>
+                See it on GitHub
+            </GHButton>
         </DetailsContainer>
     )
 }

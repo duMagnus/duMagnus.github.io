@@ -8,6 +8,8 @@ export const Background = styled.div`
 `;
 export const Header = styled.header`
   height: 230px;
+  width: 60%;
+  margin: 0 auto;
   padding: 40px;
   display: flex;
   box-sizing: border-box;
@@ -26,7 +28,6 @@ export const AppTextContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   padding: 0;
-  width: 550px;
   margin-left: 40px;
 `;
 
