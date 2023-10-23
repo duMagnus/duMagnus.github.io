@@ -22,12 +22,14 @@ export const ProjectDetailDescriptionContainer = styled.div`
 
 export const ProjectDetailDescriptionTitle = styled.p`
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28pt;
+  margin: 10px;
 `;
 
 export const ProjectDetailDescriptionBody = styled.p`
   font-weight: normal;
-  font-size: 20px;
+  font-size: 14pt;
+  margin: 10px;
 `;
 
 export const GHButton = styled.a`
@@ -48,6 +50,24 @@ export const GHButton = styled.a`
   transition: 0.3s;
   &:hover {
     transform: translate(-5px, -5px);
-    box-shadow: ${(props) => props.theme.colors.lBlue} 5px 5px;
   }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: ${(props) => props.theme.colors.lBlue} 5px 5px;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    border-radius: 25px;
+  }
+  
+  &:hover:after {
+    opacity: 1;
+  }
+  
 `;

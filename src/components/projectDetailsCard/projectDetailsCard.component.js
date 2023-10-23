@@ -14,8 +14,8 @@ export const ProjectDetailsCardComponent = ({ project }) => {
                 <ProjectDetailDescriptionTitle>{project.title}</ProjectDetailDescriptionTitle>
                 <ProjectDetailDescriptionBody>{project.body}</ProjectDetailDescriptionBody>
             </ProjectDetailDescriptionContainer>
-            <GHButton href={project.ghLink} target='_blank'>
-                See it on GitHub
+            <GHButton href={project.link} target='_blank'>
+              {project.buttonText}
             </GHButton>
         </DetailsContainer>
     )

@@ -31,7 +31,7 @@ function App(props) {
                     let circleWidth = 2;
                     const distFromMouse = p.dist(p.mouseX, p.mouseY, x * cellWidth, y * cellWidth);
                     const minDist = 500;
-                    const size = 250;
+                    const size = 200;
                     if (distFromMouse <= minDist) {
                         circleWidth = (circleWidth**((minDist + size - distFromMouse)/size) + 1);
                     }

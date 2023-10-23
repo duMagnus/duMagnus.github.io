@@ -8,7 +8,7 @@ export const ProjectGif = styled.img`
   transition-property: border;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  border: 2px solid ${(props) => props.theme.colors.dGray};
+  border: 5px solid ${(props) => props.borderColor};
 `;
 
 export const ProjectCardContainer = styled.div`
@@ -19,16 +19,35 @@ export const ProjectCardContainer = styled.div`
   width: 25%;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 50px;
-  transition: transform, box-shadow, 0.35s;
+  transition: transform 0.35s;
+  
   &:hover {
     cursor: pointer;
     transform: translate(-${(props) => props.theme.spacing.shadowDepth * 5}vw, -${(props) => props.theme.spacing.shadowDepth * 5}vw);
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     box-shadow: ${(props) => props.theme.colors.dBlue} ${(props) => props.theme.spacing.shadowDepth}vw ${(props) => props.theme.spacing.shadowDepth}vw,
                 ${(props) => props.theme.colors.lBlue} ${(props) => props.theme.spacing.shadowDepth * 2}vw ${(props) => props.theme.spacing.shadowDepth * 2}vw, 
                 ${(props) => props.theme.colors.dGreen} ${(props) => props.theme.spacing.shadowDepth * 3}vw ${(props) => props.theme.spacing.shadowDepth * 3}vw, 
                 ${(props) => props.theme.colors.lGreen} ${(props) => props.theme.spacing.shadowDepth * 4}vw ${(props) => props.theme.spacing.shadowDepth * 4}vw, 
                 ${(props) => props.theme.colors.pink} ${(props) => props.theme.spacing.shadowDepth * 5}vw ${(props) => props.theme.spacing.shadowDepth * 5}vw;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    border-radius: 50px;
   }
+  
+  &:hover:after {
+    opacity: 1;
+  }
+  
   @media (max-width: 1200px) {
     width: 100%;
   }
