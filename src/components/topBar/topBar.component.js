@@ -9,9 +9,9 @@ export  const TopBar = () => {
   const theme = useTheme();
 
   const links = [
-    { title: 'github', icon: GitHub, displayText: 'GitHub', link: 'https://github.com/dumagnus/'},
-    { title: 'email', icon: Email, displayText: 'eduj.magnus@gmail.com', link: 'https://github.com/dumagnus/' },
-    { title: 'linkedIn', icon: LinkedIn, displayText: 'duMagnus', link: 'https://github.com/dumagnus/' },
+    { title: 'github', icon: GitHub, displayText: 'GitHub', link: 'https://github.com/duMagnus/'},
+    { title: 'email', icon: Email, displayText: 'eduj.magnus@gmail.com', link: 'mailto:eduj.magnus@gmail.com' },
+    { title: 'linkedIn', icon: LinkedIn, displayText: 'duMagnus', link: 'https://www.linkedin.com/in/eduardo-magnus/' },
   ];
 
   return(
@@ -19,7 +19,7 @@ export  const TopBar = () => {
       <BarContainer>
         {links.map(({ icon: Icon, displayText, link}) => {
           return(
-            <LinkContainer href={link}>
+            <LinkContainer href={link} target='_blank'>
               <Icon/>
               <DisplayText>
                 {displayText}
