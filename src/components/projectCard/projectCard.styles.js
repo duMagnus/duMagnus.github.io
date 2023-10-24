@@ -16,16 +16,18 @@ export const ProjectCardContainer = styled.div`
   flex-direction: column;
   margin: 40px 0 40px;
   padding: 20px;
-  width: 25%;
+  width: 20%;
+  min-height: 550px;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 50px;
-  transition: transform 0.35s;
+  transition: transform 0.35s ease-in-out;
+  box-shadow: ${(props) => props.theme.colors.lGray} 0 0 30px;
   
   &:hover {
     cursor: pointer;
-    transform: translate(-${(props) => props.theme.spacing.shadowDepth * 5}vw, -${(props) => props.theme.spacing.shadowDepth * 5}vw);
+    transform: translate(-15px, -15px);
   }
-  
+
   &:after {
     content: '';
     position: absolute;
@@ -34,11 +36,7 @@ export const ProjectCardContainer = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: ${(props) => props.theme.colors.dBlue} ${(props) => props.theme.spacing.shadowDepth}vw ${(props) => props.theme.spacing.shadowDepth}vw,
-                ${(props) => props.theme.colors.lBlue} ${(props) => props.theme.spacing.shadowDepth * 2}vw ${(props) => props.theme.spacing.shadowDepth * 2}vw, 
-                ${(props) => props.theme.colors.dGreen} ${(props) => props.theme.spacing.shadowDepth * 3}vw ${(props) => props.theme.spacing.shadowDepth * 3}vw, 
-                ${(props) => props.theme.colors.lGreen} ${(props) => props.theme.spacing.shadowDepth * 4}vw ${(props) => props.theme.spacing.shadowDepth * 4}vw, 
-                ${(props) => props.theme.colors.pink} ${(props) => props.theme.spacing.shadowDepth * 5}vw ${(props) => props.theme.spacing.shadowDepth * 5}vw;
+    box-shadow: ${(props) => props.theme.colors.dGray} 15px 15px 50px;
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
     border-radius: 50px;

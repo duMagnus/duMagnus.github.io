@@ -1,11 +1,14 @@
-import logo from "../../assets/logo.svg";
+import profile_pic from "../../assets/profile_picture.jpeg";
 import styled from "styled-components";
 
 export const Background = styled.div`
   min-height: 100vh;
   min-width: 100%;
   padding-bottom: 100px;
+  background-color: ${(props) => props.theme.colors.white};
 `;
+
+
 export const Header = styled.header`
   height: 230px;
   width: 100%;
@@ -15,13 +18,17 @@ export const Header = styled.header`
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.colors.lBlack};
+  background-color: ${(props) => props.theme.colors.lGray};
+  box-shadow: ${(props) => props.theme.colors.dGray} 0px 0px 20px;
 `;
 
 export const Logo = styled.img.attrs({
-  src: logo,
+  src: profile_pic,
+  loading: 'lazy',
 })`
-  height: 120px;
+  height: 130px;
+  border-radius: 50vh;
+  box-shadow: ${(props) => props.theme.colors.dGray} 0 0 30px;
 `;
 
 export const AppTextContainer = styled.div`
@@ -34,13 +41,13 @@ export const AppTextContainer = styled.div`
 
 export const AppTitle = styled.h1`
   margin: 0 0 10px 0;
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.lBlack};
   font-size: 50pt;
   font-weight: 500;
 `;
 
 export const AppDescription = styled.p`
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.lBlack};
   margin: 0;
   font-size: 12pt;
 `;
