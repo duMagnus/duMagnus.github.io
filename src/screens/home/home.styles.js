@@ -1,11 +1,12 @@
 import profile_pic from "../../assets/profile_picture.jpeg";
 import styled from "styled-components";
+import bg from "../../assets/bg_image_account.png"
 
 export const Background = styled.div`
   min-height: 100vh;
   min-width: 100%;
   padding-bottom: 100px;
-  background-color: ${(props) => props.theme.colors.white};
+  background-image: url(${bg});
 `;
 
 
