@@ -25,7 +25,7 @@ export const ProjectCardContainer = styled.div`
   
   &:hover {
     cursor: pointer;
-    transform: translate(-15px, -15px);
+    transform: translate(-10px, -10px);
   }
 
   &:after {
@@ -36,7 +36,7 @@ export const ProjectCardContainer = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: ${(props) => props.theme.colors.dGray} 15px 15px 50px;
+    box-shadow: ${(props) => props.theme.colors.dGray} 10px 10px 30px;
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
     border-radius: 50px;

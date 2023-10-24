@@ -6,7 +6,7 @@ export const BarContainer = styled.div`
   padding: 10px 40px;
   box-shadow: ${(props) => props.theme.colors.lGray}80 0 0 40px;
   border-radius: 50vh;
-  margin: 60px auto 0;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -23,6 +23,11 @@ export const LinkContainer = styled.a`
   padding: 3px 20px;
   transition: all 0.35s ease-in-out;
   margin: 0 10px;
+  
+  &:active {
+    border: none;
+    text-decoration: none;
+  }
   
   &:first-of-type {
     margin-left: 0;
