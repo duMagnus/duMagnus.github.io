@@ -10,6 +10,7 @@ export const BarContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 `;
 
 export const LinkContainer = styled.a`
