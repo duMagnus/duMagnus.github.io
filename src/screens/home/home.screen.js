@@ -24,7 +24,7 @@ export const Home = () => {
                     </AppTextContainer>
                   </AppLink>
                 </Header>
-                  <HeaderWave/>
+                <HeaderWave/>
               <TopBar/>
               <Projects />
             </Background>

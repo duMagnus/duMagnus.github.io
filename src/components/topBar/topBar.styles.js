@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const BarContainer = styled.div`
   max-width: max-content;
   padding: 10px 40px;
-  box-shadow: ${(props) => props.theme.colors.lGray}80 0 0 40px;
+  box-shadow: ${(props) => props.theme.colors.dGray}90 0 0 30px;
   border-radius: 50vh;
   margin: 0 auto;
   align-items: center;
