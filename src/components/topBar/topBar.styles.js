@@ -48,12 +48,15 @@ export const LinkContainer = styled.a`
     width: 100%;
     height: 100%;
     opacity: 0;
+    top: 0;
+    left: 0;
     border-radius: 50vh;
     box-shadow: 0 0 15px ${(props) => props.theme.colors.lGray};
     transition: opacity 0.35s ease-in-out;
   }
   
   &:hover:after {
+    
     opacity: 1;
   }
 `;
