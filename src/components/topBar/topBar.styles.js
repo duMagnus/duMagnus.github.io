@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const BarContainer = styled.div`
   max-width: max-content;
-  padding: 10px 40px;
+  padding: 0.5vw 2vw;
   box-shadow: ${(props) => props.theme.colors.dGray}90 0 0 30px;
   border-radius: 50vh;
   margin: 0 auto;
@@ -20,9 +20,9 @@ export const LinkContainer = styled.a`
   text-decoration: none;
   background-color: white;
   border-radius: 50vh;
-  padding: 3px 20px;
+  padding: 0.02vw 1.3vw;
   transition: all 0.35s ease-in-out;
-  margin: 0 10px;
+  margin: 0 0.8vw;
   
   &:active {
     border: none;
@@ -65,4 +65,5 @@ export const DisplayText = styled.p`
   color: ${(props) => props.theme.colors.lBlack};
   margin-left: 20px;
   font-weight: 600;
+  font-size: 1vw;
 `;

@@ -15,7 +15,7 @@ export  const TopBar = () => {
   ];
 
   return(
-    <IconContext.Provider value={{ color: theme.colors.lBlack, size: '35' }}>
+    <IconContext.Provider value={{ color: theme.colors.lBlack, size: '1.7vw', style: { marginRight: -3 } }}>
       <BarContainer>
         {links.map(({ icon: Icon, displayText, link}) => {
           return(

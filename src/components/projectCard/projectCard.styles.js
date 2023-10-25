@@ -17,7 +17,7 @@ export const ProjectCardContainer = styled.div`
   margin: 40px 0 40px;
   padding: 20px;
   width: 20%;
-  min-height: 550px;
+  height: 24vw;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 50px;
   transition: transform 0.35s ease-in-out;
@@ -56,13 +56,13 @@ export const ProjectDescriptionContainer = styled.div`
 `;
 
 export const ProjectDescriptionTitle = styled.p`
-  font-weight: 500;
-  font-size: 22pt;
+  font-weight: 600;
+  font-size: 1.4vw;
   color: ${(props) => props.theme.colors.lBlack};
 `;
 
 export const ProjectDescriptionBody = styled.p`
-  font-size: 12pt;
-  font-weight: 100;
+  font-size: 0.9vw;
+  font-weight: 400;
   color: ${(props) => props.theme.colors.lBlack};
 `;

@@ -12,7 +12,7 @@ export const ProjectDetailsCardComponent = ({ project }) => {
             <ProjectDetailGif src={process.env.PUBLIC_URL + project.media} />
             <ProjectDetailDescriptionContainer>
                 <ProjectDetailDescriptionTitle>{project.title}</ProjectDetailDescriptionTitle>
-                <ProjectDetailDescriptionBody>{project.body}</ProjectDetailDescriptionBody>
+                <ProjectDetailDescriptionBody>{project.longText}</ProjectDetailDescriptionBody>
             </ProjectDetailDescriptionContainer>
             <GHButton href={project.link} target='_blank'>
               {project.buttonText}

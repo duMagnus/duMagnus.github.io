@@ -34,7 +34,7 @@ export const ProjectCard = ({ projectIndex, project }) => {
                 <ProjectGif src={process.env.PUBLIC_URL + project.media} borderColor={borderColor}/>
                 <ProjectDescriptionContainer>
                     <ProjectDescriptionTitle>{project.title}</ProjectDescriptionTitle>
-                    <ProjectDescriptionBody>{project.body}</ProjectDescriptionBody>
+                    <ProjectDescriptionBody>{project.shortText}</ProjectDescriptionBody>
                 </ProjectDescriptionContainer>
             </ProjectCardContainer>
             {isOpen && createPortal(
