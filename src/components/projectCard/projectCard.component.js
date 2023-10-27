@@ -4,7 +4,7 @@ import {
     ProjectDescriptionBody,
     ProjectDescriptionContainer,
     ProjectDescriptionTitle,
-    ProjectGif,
+    ProjectMedia,
 } from "./projectCard.styles";
 import {ProjectDetailsCardComponent} from "../projectDetailsCard/projectDetailsCard.component";
 import {createPortal} from "react-dom";
@@ -31,7 +31,7 @@ export const ProjectCard = ({ projectIndex, project }) => {
     return (
         <>
             <ProjectCardContainer onClick={() => setIsOpen(!isOpen)}>
-                <ProjectGif src={process.env.PUBLIC_URL + project.media} borderColor={borderColor}/>
+                <ProjectMedia src={process.env.PUBLIC_URL + project.gif} borderColor={borderColor}/>
                 <ProjectDescriptionContainer>
                     <ProjectDescriptionTitle>{project.title}</ProjectDescriptionTitle>
                     <ProjectDescriptionBody>{project.shortText}</ProjectDescriptionBody>

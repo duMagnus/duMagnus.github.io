@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {IconContext} from "react-icons";
 
 
 export const BarContainer = styled.div`
@@ -66,4 +67,21 @@ export const DisplayText = styled.p`
   margin-left: 20px;
   font-weight: 600;
   font-size: 1vw;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
+`;
+
+export const IconContainer = styled.div`
+  margin-right: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  color: ${(props) => props.theme.colors.dBlue};
+  @media (max-width: 768px) {
+    margin-right: -13px;
+    font-size: 5vw;
+  }
 `;

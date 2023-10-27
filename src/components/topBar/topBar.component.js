@@ -1,5 +1,5 @@
 import React from "react";
-import {BarContainer, DisplayText, LinkContainer} from "./topBar.styles";
+import {BarContainer, DisplayText, IconContainer, LinkContainer} from "./topBar.styles";
 import { FiGithub as GitHub, FiMail as Email, FiLinkedin as LinkedIn } from "react-icons/fi";
 import {IconContext} from "react-icons";
 import {useTheme} from "styled-components";
@@ -15,19 +15,19 @@ export  const TopBar = () => {
   ];
 
   return(
-    <IconContext.Provider value={{ color: theme.colors.lBlack, size: '1.7vw', style: { marginRight: -3 } }}>
-      <BarContainer>
-        {links.map(({ icon: Icon, displayText, link}) => {
-          return(
-            <LinkContainer href={link} target='_blank'>
+    <BarContainer>
+      {links.map(({ icon: Icon, displayText, link}) => {
+        return(
+          <LinkContainer href={link} target='_blank'>
+            <IconContainer>
               <Icon/>
-              <DisplayText>
-                {displayText}
-              </DisplayText>
-            </LinkContainer>
-          )
-        })}
-      </BarContainer>
-    </IconContext.Provider>
+            </IconContainer>
+            <DisplayText>
+              {displayText}
+            </DisplayText>
+          </LinkContainer>
+        )
+      })}
+    </BarContainer>
   )
 }

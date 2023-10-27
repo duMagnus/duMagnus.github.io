@@ -1,19 +1,18 @@
 import styled from "styled-components";
-import { ProjectGif } from "../projectCard/projectCard.styles"
+import { ProjectMedia } from "../projectCard/projectCard.styles"
 
 export const DetailsContainer = styled.div`
-  width: 900px;
+  width: 45vw;
   height: fit-content;
   background-color: ${(props) => props.theme.colors.white};
-  border-radius: 50px;
+  border-radius: 3vw;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 2vw;
 `;
 
-export const ProjectDetailGif = styled(ProjectGif)`
-  && {
-    border: 5px solid ${(props) => props.theme.colors.lBlue};
-  }
+export const ProjectDetailMedia = styled.video`
+  width: 100%;
+  border-radius: 2vw;
 `;
 
 export const ProjectDetailDescriptionContainer = styled.div`
@@ -22,34 +21,33 @@ export const ProjectDetailDescriptionContainer = styled.div`
 
 export const ProjectDetailDescriptionTitle = styled.p`
   font-weight: bold;
-  font-size: 28pt;
-  margin: 10px;
+  font-size: 1.4vw;
+  margin: 0.7vw;
 `;
 
 export const ProjectDetailDescriptionBody = styled.p`
   font-weight: normal;
-  font-size: 14pt;
-  margin: 10px;
+  font-size: 0.9vw;
+  margin: 0.7vw;
 `;
 
 export const GHButton = styled.a`
   background-color: ${(props) => props.theme.colors.pink};
   color: ${(props) => props.theme.colors.white};
   font-weight: bold;
-  min-width: 180px;
-  height: 50px;
-  max-width: 40%;
-  border-radius: 25px;
-  text-align: center;
+  font-size: 1vw;
+  width: 11vw;
+  height: 2.3vw;
+  border-radius: 50vh;
   align-items: center;
   display: flex;
   justify-content: center;
   text-decoration: none;
-  margin: 40px auto 20px;
-  
+  margin: 2vw auto 0;
   transition: 0.3s;
+  
   &:hover {
-    transform: translate(-5px, -5px);
+    transform: translate(-0.3vw, -0.3vw);
   }
   
   &:after {
@@ -60,10 +58,10 @@ export const GHButton = styled.a`
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: ${(props) => props.theme.colors.lBlue} 5px 5px;
+    box-shadow: ${(props) => props.theme.colors.lBlue} 0.3vw 0.3vw;
     opacity: 0;
-    transition: opacity 0.35s ease-in-out;
-    border-radius: 25px;
+    transition: opacity 0.3s;
+    border-radius: 50vh;
   }
   
   &:hover:after {

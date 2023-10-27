@@ -19,6 +19,11 @@ export const Header = styled.header`
   align-items: end; 
   justify-content: center;
   background-color: ${(props) => props.theme.colors.lGray};
+
+  @media (max-width: 768px) {
+    height: 24vw;
+    padding: 7vw 5vw;
+  }
 `;
 
 export const HeaderWave = styled.div`
@@ -28,15 +33,23 @@ export const HeaderWave = styled.div`
   margin-bottom: 0.7vw;
   width: 100%;
   height: 10vw;
+  
+  @media (max-width: 768px) {
+    height: 20vw;
+  }
 `;
 
 export const Logo = styled.img.attrs({
   src: profile_pic,
   loading: 'lazy',
 })`
-  height: 8vw;
+  height: 7vw;
   border-radius: 50vh;
   box-shadow: ${(props) => props.theme.colors.dGray} 0 0 2vw;
+  
+  @media (max-width: 768px) {
+    height: 18vw;
+  }
 `;
 
 export const AppTextContainer = styled.div`
@@ -49,15 +62,24 @@ export const AppTextContainer = styled.div`
 export const AppTitle = styled.h1`
   margin: 0 0 1vw 0;
   color: ${(props) => props.theme.colors.lBlack};
-  font-size: 4vw;
+  font-size: 3.2vw;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 7vw;
+    font-weight: 500;
+  }
 `;
 
 export const AppDescription = styled.p`
   color: ${(props) => props.theme.colors.lBlack};
   margin: 0;
-  font-size: 1vw;
-  font-weight: 500;
+  font-size: 0.9vw;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `;
 
 export const AppLink = styled.a`
