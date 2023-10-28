@@ -3,23 +3,28 @@ import styled from "styled-components";
 export const ProjectMedia = styled.img`
   max-width: 100%;
   aspect-ratio: 16/9;
-  border-radius: 2vw;
+  border-radius: 1vw;
   box-sizing: border-box;
   transition-property: border;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  border: 5px solid ${(props) => props.borderColor};
+  border: 0.3vw solid ${(props) => props.borderColor};
+  
+  @media (max-width: 768px) {
+    border-radius: 4vw;
+    border: 1.5vw solid ${(props) => props.borderColor};
+  }
 `;
 
 export const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 40px 0 40px;
-  padding: 20px;
+  margin: 1.6vw 0 1.6vw;
+  padding: 1vw;
   width: 20%;
   aspect-ratio: 3/4;
   background-color: ${(props) => props.theme.colors.white};
-  border-radius: 50px;
+  border-radius: 2vw;
   transition: transform 0.35s ease-in-out;
   box-shadow: ${(props) => props.theme.colors.lGray} 0 0 30px;
   
@@ -39,7 +44,10 @@ export const ProjectCardContainer = styled.div`
     box-shadow: ${(props) => props.theme.colors.dGray} 10px 10px 30px;
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
-    border-radius: 50px;
+    border-radius: 3vw;
+    @media (max-width: 768px) {
+      border-radius: 7vw;
+    }
   }
   
   &:hover:after {
@@ -51,7 +59,8 @@ export const ProjectCardContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    border-radius: 30px;
+    border-radius: 7vw;
+    padding: 4vw;
   }
 `;
 
