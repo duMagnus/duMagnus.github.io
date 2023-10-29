@@ -2,7 +2,6 @@ import React from "react";
 import {AppDescription, AppLink, AppTextContainer, AppTitle, Background, Header, HeaderWave, Logo} from "./home.styles";
 import { Projects } from "../../components/projects/projects.component";
 import {TopBar} from "../../components/topBar/topBar.component";
-import {useTheme} from "styled-components";
 
 export const Home = () => {
   return (

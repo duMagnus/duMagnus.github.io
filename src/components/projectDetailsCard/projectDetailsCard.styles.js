@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ProjectMedia } from "../projectCard/projectCard.styles"
 
 export const DetailsContainer = styled.div`
   width: 45vw;
@@ -8,11 +7,19 @@ export const DetailsContainer = styled.div`
   border-radius: 3vw;
   box-sizing: border-box;
   padding: 2vw;
+  @media (max-width: 600px) {
+    width: 96vw;
+    padding: 4vw;
+    border-radius: 6vw;
+  }
 `;
 
 export const ProjectDetailMedia = styled.video`
   width: 100%;
   border-radius: 2vw;
+  @media (max-width: 600px) {
+    border-radius: 4vw;
+  }
 `;
 
 export const ProjectDetailDescriptionContainer = styled.div`
@@ -23,12 +30,20 @@ export const ProjectDetailDescriptionTitle = styled.p`
   font-weight: bold;
   font-size: 1.4vw;
   margin: 0.7vw;
+  @media (max-width: 600px) {
+    font-size: 6vw;
+    margin: 2vw;
+  }
 `;
 
 export const ProjectDetailDescriptionBody = styled.p`
   font-weight: normal;
   font-size: 0.9vw;
   margin: 0.7vw;
+  @media (max-width: 600px) {
+    font-size: 4.3vw;
+    margin: 2vw;
+  }
 `;
 
 export const GHButton = styled.a`
@@ -66,6 +81,13 @@ export const GHButton = styled.a`
   
   &:hover:after {
     opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    width: 50vw;
+    height: 12vw;
+    font-size: 4.5vw;
+    margin: 5vw auto 2vw;
   }
   
 `;

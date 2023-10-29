@@ -20,7 +20,7 @@ export const Header = styled.header`
   justify-content: center;
   background-color: ${(props) => props.theme.colors.lGray};
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     height: 24vw;
     padding: 7vw 5vw;
   }
@@ -34,7 +34,7 @@ export const HeaderWave = styled.div`
   width: 100%;
   height: 10vw;
   
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     height: 20vw;
   }
 `;
@@ -47,7 +47,7 @@ export const Logo = styled.img.attrs({
   border-radius: 50vh;
   box-shadow: ${(props) => props.theme.colors.dGray} 0 0 2vw;
   
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     height: 18vw;
   }
 `;
@@ -65,7 +65,7 @@ export const AppTitle = styled.h1`
   font-size: 3.2vw;
   font-weight: 500;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     font-size: 7vw;
     font-weight: 500;
   }
@@ -77,7 +77,7 @@ export const AppDescription = styled.p`
   font-size: 0.9vw;
   font-weight: 400;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     font-size: 3vw;
   }
 `;

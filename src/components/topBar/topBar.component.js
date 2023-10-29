@@ -1,12 +1,8 @@
 import React from "react";
 import {BarContainer, DisplayText, IconContainer, LinkContainer} from "./topBar.styles";
 import { FiGithub as GitHub, FiMail as Email, FiLinkedin as LinkedIn } from "react-icons/fi";
-import {IconContext} from "react-icons";
-import {useTheme} from "styled-components";
 
 export  const TopBar = () => {
-
-  const theme = useTheme();
 
   const links = [
     { title: 'github', icon: GitHub, displayText: 'GitHub', link: 'https://github.com/duMagnus/'},
