@@ -61,6 +61,8 @@ export const ProjectCardContainer = styled.div`
   @media (max-width: 600px) {
     border-radius: 7vw;
     padding: 4vw;
+    margin: 3vw 2vw 6vw;
+    aspect-ratio: unset;
   }
 `;
 
@@ -87,7 +89,7 @@ export const ProjectDescriptionBody = styled.p`
   font-weight: 400;
   color: ${(props) => props.theme.colors.lBlack};
   @media (max-width: 600px) {
-    font-size: 3.5vw;
+    font-size: 4.1vw;
     margin: 2vw 1vw;
   }
 `;

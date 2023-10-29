@@ -11,7 +11,7 @@ export const Home = () => {
           <Logo />
           <AppTextContainer>
             <AppTitle>Eduardo Magnus</AppTitle>
-            <AppDescription>Below you can see some of my personal projects. Most of them were created with the intend of learning some new technique, tool or language that I found interesting at the time.</AppDescription>
+            <AppDescription>Hi, I’m a full-stack developer skilled in Java, Python, React, and Vue.js. I create apps with high-quality code and user experience. I’m also interested in AI development and learning new technologies. You can see my projects below (more info clicking on the cards). If you have any questions or want to work with me, please email me or connect with me on LinkedIn.</AppDescription>
           </AppTextContainer>
         </AppLink>
       </Header>

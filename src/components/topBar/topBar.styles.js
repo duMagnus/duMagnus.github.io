@@ -11,6 +11,14 @@ export const BarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: white;
+  @media (max-width: 600px) {
+    display: block;
+    border-radius: 7vw;
+    width: 88vw;
+    box-sizing: border-box;
+    max-width: unset;
+    padding: 3vw;
+  }
 `;
 
 export const LinkContainer = styled.a`
@@ -59,6 +67,12 @@ export const LinkContainer = styled.a`
     
     opacity: 1;
   }
+
+  @media (max-width: 600px) {
+    justify-content: left;
+    padding: 0.2vw 7vw;
+    margin: 2vw 0 1vw;
+  }
 `;
 
 export const DisplayText = styled.p`
@@ -68,7 +82,7 @@ export const DisplayText = styled.p`
   font-size: 1vw;
 
   @media (max-width: 600px) {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 `;
 
@@ -81,6 +95,6 @@ export const IconContainer = styled.div`
   color: ${(props) => props.theme.colors.dBlue};
   @media (max-width: 600px) {
     margin-right: -13px;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 `;

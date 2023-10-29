@@ -21,8 +21,9 @@ export const Header = styled.header`
   background-color: ${(props) => props.theme.colors.lGray};
 
   @media (max-width: 600px) {
-    height: 24vw;
+    height: 93vw;
     padding: 7vw 5vw;
+    display: block;
   }
 `;
 
@@ -35,7 +36,7 @@ export const HeaderWave = styled.div`
   height: 10vw;
   
   @media (max-width: 600px) {
-    height: 20vw;
+    height: 10vw;
   }
 `;
 
@@ -48,7 +49,7 @@ export const Logo = styled.img.attrs({
   box-shadow: ${(props) => props.theme.colors.dGray} 0 0 2vw;
   
   @media (max-width: 600px) {
-    height: 18vw;
+    height: 22vw;
   }
 `;
 
@@ -57,6 +58,10 @@ export const AppTextContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 3.5vw;
+  @media (max-width: 600px) {
+    width: 90vw;
+    margin: auto;
+  }
 `;
 
 export const AppTitle = styled.h1`
@@ -66,8 +71,9 @@ export const AppTitle = styled.h1`
   font-weight: 500;
 
   @media (max-width: 600px) {
-    font-size: 7vw;
-    font-weight: 500;
+    font-size: 8vw;
+    font-weight: 600;
+    margin: 2vh auto;
   }
 `;
 
@@ -78,7 +84,9 @@ export const AppDescription = styled.p`
   font-weight: 400;
 
   @media (max-width: 600px) {
-    font-size: 3vw;
+    font-size: 4.1vw;
+    margin: 0 auto;
+    text-align: center;
   }
 `;
 
@@ -87,4 +95,9 @@ export const AppLink = styled.a`
   display: flex;
   align-items: center;
   height: 0;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
