@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "Gesture Recognition",
+      "shortText": "This is the first step in developing an application to recognize gestures and their meaning in realtime.",
+      "longText": "This is the first step in developing an application to recognize gestures and their meaning in realtime. Using OpenCV and MediaPipe, I'm able to locate in realtime and with great accuracy the hands and joints on the frame of my camera. From here I want to train a gesture recognition AI with my own gestures, as a tool to help those that don't have the motor skills to handle regular input devices, such as a mouse/keyboard or a controller.",
+      "gif": "assets/projectMedia/gesture-recognition.gif",
+      "video": "assets/projectMedia/gesture-recognition.mp4",
+      "link": "https://github.com/duMagnus/gesture-recognition"
+    },
+    {
       "title": "Resumix",
       "shortText": "My first actual mobile app, the previous one was following along a course.",
       "longText": "My first actual mobile app, the previous one was following along a course. Resumix is an app that lets you record audio and get a summary of what was said in just a few seconds and it also stores the transcription of the audio so you can always go back for any details. Whether you want to capture the main points of a lecture, a meeting, or a podcast, it can help save time and keep things organized. It uses the OpenAI's Whisper API to transcribe audio into text, and then the GPT API to generate a concise and accurate summary.",

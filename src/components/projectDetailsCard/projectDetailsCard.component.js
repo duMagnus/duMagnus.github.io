@@ -18,9 +18,11 @@ export const ProjectDetailsCardComponent = ({ project }) => {
                 <ProjectDetailDescriptionTitle>{project.title}</ProjectDetailDescriptionTitle>
                 <ProjectDetailDescriptionBody>{project.longText}</ProjectDetailDescriptionBody>
             </ProjectDetailDescriptionContainer>
-            <GHButton href={project.link} target='_blank'>
-              {project.buttonText}
-            </GHButton>
+            {project.buttonText &&
+              <GHButton href={project.link} target='_blank'>
+                {project.buttonText}
+              </GHButton>
+            }
         </DetailsContainer>
     )
 }
